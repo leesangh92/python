@@ -1,0 +1,19 @@
+오류 내용 복사 붙여넣기로 오답노트처럼 정리하면 반복되거나 자주 나타나는 오류 쉽게 찾을 수 있다.
+
+>>> s=[2,4,6]
+>>> s1=s
+>>> s
+[2, 4, 6]
+>>> s1
+[2, 4, 6]
+>>> s[0]
+2
+>>> s[2]
+6
+>>> s[1]
+4
+>>> s[3]
+Traceback (most recent call last):
+  File "<pyshell#95>", line 1, in <module>
+    s[3]
+IndexError: list index out of range
