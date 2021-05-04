@@ -1,0 +1,92 @@
+notepad++
+D2Coding(글꼴, 압축풀기 - D2Codingall - 설치)
+Python
+Github
+경험 - 카페 운영, Youtube 스튜디오
+파이썬 설치 시 Add python 3.9 to PATH 체크박스 체크
+
+원하는 구역 선택하기 alt + shift + 방향키
+
+Data(자료 구조 : int, float, bool, str, 배열(list, tuple, dict, set))
+연산자, 제어문
+
+알고리즘 : 프로그램을 어떻게 구성할 것인가
+
+컴파일 : 복잡, 어렵 / 빠른 속도 (컴퓨터 언어로 컴퓨터만 이해 가능) - c언어
+스크립트 : 간단, 쉬움 / 느린 속도 (사람이 이해 할 수 있음) - python, java
+
+절차 지향 : 함수 - c언어
+객체 지향 : 객체, class - java, c++, c#
+
+IDLE 창 quit 후 재실행 시 환경이 바뀌기 떄문에 import처럼 데이터를 불러오는 함수를 다시 실행해야 한다.
+
+알파벳을 입력한 후 Tab키를 누르면 자동완성 기능이 실행되어 필요한 함수를 호출할 수 있다.
+.을 찍은 후 잠시 대기하면 멤버(변수 or 함수)가 표시된다.
+
+dir(__builtins__) # 더블 언더스코어(던더)
+ : 에러, 경고, 내장함수(builit-in function) 확인 가능함
+
+keyword.kwlist : 키워드리스트 확인 가능함
+
+오류 내용 복사 붙여넣기로 오답노트처럼 정리하면 반복되거나 자주 나타나는 오류 쉽게 찾을 수 있다.
+
+>>> s=[2,4,6]
+>>> s1=s
+>>> s
+[2, 4, 6]
+>>> s1
+[2, 4, 6]
+>>> s[0]
+2
+>>> s[2]
+6
+>>> s[1]
+4
+>>> s[3]
+Traceback (most recent call last):
+  File "<pyshell#95>", line 1, in <module>
+    s[3]
+IndexError: list index out of range
+
+
+SyntaxError: can't assign to operator, SyntaxError: can't assign to literal
+
+값을 변수에 저장하는 대입 연산자(=)와 값을 비교하는 비교 연산자(==)를 혼동해서 잘못 쓰면 에러가 발생합니다.
+또는 변수에 잘못된 값이 저장되어 프로그램이 제대로 동작하지 않을 수도 있습니다. 
+따라서 어떠한 값이 같은지 비교할 때는 반드시 등호를 두 개(==) 사용해야 한다는 것을 기억하세요.
+
+할당과 복사(중요)
+
+a = 20
+b = 40
+c = 20
+d = 20
+
+id(20) = id(a) = id(c) = id(d)	# 저장되어 있는 데이터를 할당받아 가져옴
+
+a = [2,4,6]
+a1 = a	# 할당
+
+a[0]
+2
+
+a1[0]
+2
+
+a[0] = 9
+a
+[9,4,6]
+
+a1
+[9,4,6]
+
+a2 = a.copy()	# 복사
+a2
+[9,4,6]
+
+a[0] = 0
+a
+[0,4,6]
+
+a2
+[9,4,6]
