@@ -1,0 +1,67 @@
+자바 C언어의 array(배열) : 같은 자료형의 모음
+python의 array(배열) : 모음
+
+데이터
+None, int, float, str, bool(True == 1, False == 0)
+list, tuple, set, dict
+
+연산자(bit 연산, 이진연산)
+비교
+> : gt
+< : lt
+>= : ge
+<= : le
+== : eq
+!= : ne
+
+in, is(==id(eq)), not, or(|), and(&), 
+^(배타적 논리, bit exclusive or), ~(논리 not, bit 뒤집기(1은 0으로 0은 1로))
+
+반복문
+들여쓰기 indentation(들여쓰기, 기본적으로 4 스페이스), 자동 줄바꿈(\n)이 설정되어있다.
+
+for i in range(시작값, 마지막값+1, (증가폭)) :
+
+while 조건 :
+
+a.insert(index, object(객체), /)
+
+append나 insert처럼 새로운 객체가 추가될 때 인덱스 값들도 모두 변경? 변경
+thread
+
+pop은 가장 뒤에 있는 객체를 뽑아내어 출력
+
+얕은 복사(copy)와 깊은 복사(deep copy)
+
+TypeError: '<' not supported between instances of 'str' and 'float' # 같은 데이터 형태여야 정렬가능
+
+멤버 함수 ==메서드
+멤버 변수 == 필드
+객체 = method + field
+
+객체 . 멤버 함수(==메서드)
+
+magic method : 특정 용도를 가지고 있으며, 시스템이 기본 제공(object class로부터 상속받음)
+
+(튜플)은 변경 불가능한 리스트
+형 변환
+
+[] : list
+() : tuple
+{} : set, dict
+
+
+제어문 = 반복문(for, while) + 조건문(if, else, elif, continue, break)
+
+continue - skip, 계속 진행
+break - stop, loop 탈출
+
+remove() 메소드는 집합 안에 있는 요소(Element)가 없으면 예외를 발생시킵니다(KeyError)
+discard() 메소드는 집합 안에 요소(Element)가 있든 없든 (있으면 삭제하고, 없으면 통과) 예외를 발생하지 않고 Pass
+
+discard는 내가 변경한 내용만 처음으로 돌리는 것(commit 하기 전)이고
+remove는 해당 파일을 삭제 하는 것이다.
+
+새로운 파이썬 쉘에서 코드를 작성한 뒤 f5를 누르면 
+코드를 작성해 놓은 쉘에서 코드가 저장된 후 새로운 쉘에서 결과값을 보여줍니다.
+

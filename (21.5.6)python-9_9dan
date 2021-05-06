@@ -1,0 +1,53 @@
+'''
+dan = int(input('몇 단 출력 : '))
+for i in range(1, 10):
+    print(' {} * {} = {} '.format(dan, i, dan * i))
+'''
+'''
+while True:
+    dan = int(input('몇 단 출력 : '))
+    
+    if dan == 0:
+        print('0 단은 모두 0입니다.')
+        break 
+
+    if dan < 2 or dan > 9:
+        print('2부터 9까지의 숫자를 입력해주세요.')
+        continue
+    
+    for i in range(1, 10):
+        print(' {} * {} = {} '.format(dan, i, dan * i))
+'''
+'''
+if True:
+    print('참')
+print('Hello!')
+'''
+'''
+if False:
+    print('거짓')
+print('Hello!')
+'''
+'''
+while True:
+    
+    score = int(input(' 점수 입력 : '))
+
+    if score > 100 or score <0:
+        print('점수를 정확히 입력해주세요')
+        continue
+        
+    if score >= 90:
+        print( score, '수')
+    elif score >= 80:
+        print( score, '우')
+    elif score >= 70:
+        print( score, '미')
+    elif score >= 60:
+        print( score, '양')
+    elif score >= 50:
+        print( score, '가')
+    else:
+        print( score, '분발하세요') # 다중 if 문
+'''
+
