@@ -21,11 +21,20 @@ print(...)
 aa    bb    cc
 >>> print("aa", "bb", "cc", sep = '    ', end = '\t')
 aa    bb    cc	
->>> print("aa", "bb", "cc", sep = '    ')
-aa    bb    cc
->>> print("aa", "bb", "cc", end = '   ')
-aa bb cc   
->>> 
+
+>>> for i in range(3):
+	print('a', 'b', 'c', end = '\t')
+
+	
+a b c	a b c	a b c	
+>>> for i in range(3):
+	print('a', 'b', 'c', end = '\n')
+
+	
+a b c
+a b c
+a b c
+
 >>> help(str)
 
 >>> abs(-45)
