@@ -17,10 +17,14 @@ print(...)
     end:   string appended after the last value, default a newline.
     flush: whether to forcibly flush the stream.
 
->>> print("aa" 'bb' "cc", sep = ' ', end = '\n')
-aabbcc
->>> print("aa" 'bb' "cc", sep = ' ', end = '\t')
-aabbcc	
+>>> print("aa", "bb", "cc", sep = '    ', end = '\n')
+aa    bb    cc
+>>> print("aa", "bb", "cc", sep = '    ', end = '\t')
+aa    bb    cc	
+>>> print("aa", "bb", "cc", sep = '    ')
+aa    bb    cc
+>>> print("aa", "bb", "cc", end = '   ')
+aa bb cc   
 >>> 
 >>> help(str)
 
