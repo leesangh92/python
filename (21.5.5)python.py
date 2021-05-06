@@ -13,8 +13,8 @@ print(...)
     Prints the values to a stream, or to sys.stdout by default.
     Optional keyword arguments:
     file:  a file-like object (stream); defaults to the current sys.stdout.
-    sep:   string inserted between values, default a space.
-    end:   string appended after the last value, default a newline.
+    sep:   string inserted between values, default a space. # 값 사이에 삽입되는 문자열, 기본값은 스페이스
+    end:   string appended after the last value, default a newline. # 마지막 값 이후 추가되는 문자열, 기본값은 새로운 줄(\n)
     flush: whether to forcibly flush the stream.
 
 >>> print("aa", "bb", "cc", sep = '    ', end = '\n')
