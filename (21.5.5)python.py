@@ -43,7 +43,7 @@ a b c
 4.44445
 >>> all([3,4,5,6])
 True
->>> bool(1)
+>>> bool(1) # bool 값은 값이 존재하면 True, 값이 존재하지 않으면 False
 True
 >>> bool(31)
 True
