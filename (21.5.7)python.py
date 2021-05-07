@@ -293,6 +293,7 @@ f(1)
 f(1, 2)
 f(1, 2, 3, 4, 5, 6, 7)
 '''
+# lambda 함수
 '''
 def f(x):
     for i in range(1, 11):
@@ -302,12 +303,12 @@ print((map(f(x), list(range(1, 11)))))
 f = lambda x: x*x # lambda 함수, 이름이 없는 함수?
 print(list(map(f, range(1,11))))
 '''
-
+'''
 a1 = list(range(1, 11))
-a2 = [i for i in range(1, 11)]
+a2 = [i for i in range(1, 11)] # 리스트 정렬식
 
 print(list(map(lambda x: x*x, range(1, 11))))
 
 f= lambda x: x*x
 print(list(map(f, range(1, 11))))
-
+'''
