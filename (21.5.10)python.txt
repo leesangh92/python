@@ -1,0 +1,16 @@
+객체. 멤버 함수 or 멤버 변수
+
+class (변수, object(객체), instance)
+멤버 변수 : 속성(attribute), field
+멤버 함수 : 방법(method)
+
+생성자(constructor)함수
+소멸자(destructor)함수
+
+접근
+private(비공개)
+protected(반공개) : 친자들에게 공개
+public(공개)
+
+캡슐화(capsulation), 은닉화, 추상화(abstraction), 상속, 다형성
+
