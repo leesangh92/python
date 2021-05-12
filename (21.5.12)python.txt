@@ -1,0 +1,53 @@
+class(object): -> object : 상속
+
+__init__ 생성자 호출
+__del__ 소멸자 호출
+
+import 모듈(module)
+
+모듈저장 파일명 : myModule.py
+실행파일명 : myCalc.py
+
+*.py 확장자를 실행파일 확장자(*.exe, *.com)으로 변환 : 컴파일
+
+-F : 파일, -n : 파일명
+
+공식화 -> AI 대체 가능
+
+UTC, GMT : 표준시
+
+웹페이지 소스가 저장되어있는 곳 = 서버
+브라우저 = html(웹에서 보여지는 형식) 해석기, 클라이언트
+example.com = 도메인(domain)
+웹서버 : web-server
+데이터베이스 서버 : mySQL
+웹프로그램 : .net, php, jsp, ...(데이터베이스와 웹을 연결시켜줌)
+
+cs환경(client-server 환경)
+클라이언트 -----request(요청)------> 서버
+클라이언트 <--response(제공, 응답)-- 서버
+
+아마존 웹서비스(AWS)
+
+FrameWork(Sprin, Django, Flask) - webserver, db, ...
+
+# 127.0.0.1:8000(자기자신의 컴퓨터)
+
+matplotlib : 시각화 예제들
+
+
+Django 웹페이지 실행
+
+vscode 실행, MyProj 폴더열기, MyProj>settings.py, urls.py, MyApp>views.py 내용 수정
+powershell에서
+django-admin startapp Myapp
+cd c:\dd\web\Myproj
+python manage.py runserver
+
+Flask 웹페이지 실행
+
+vscode 실행, ww.py
+cd c:\dd
+set FLASK_APP=ww.py
+flask run
+
