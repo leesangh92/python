@@ -1,0 +1,60 @@
+행(row, record)
+열(column, field)
+행, 열 테이블(table)
+
+테이블의 모음 = 데이터베이스
+데이터베이스 관리 프로그램 : DBMS(oracle, mySQL, mariadbm,, sqlite,  msSQL, access, ...)
+
+
+
+Structured Query Language(SQL) : 일정 형식을 갖춘 언어
+
+(DDL)Data Definition Language : create, drop, alter,...
+(DML)Data Manipulation Language : insert, delete, update, select,...(CRUD(create, read, update, delete), 프로그래머들이 주로 다룸)
+(DCL)Data Control Language : gromt, revoke, commit, rollback,...(DA, DBA들이 주로 다룸)
+
+
+sql 실행 시 데이터베이스 저장 디렉토리를 설정하지 않으면 데이터베이스가 메모리에만 저장되어있다가 휘발된다
+따라서 .open 으로 파일디렉토리를 설정해주고 작업을 시작한다
+
+가독성을 높히기 위해 수행한다
+.mode column(.mo co)
+.header on(.he on)
+
+mysql command 창에서는 자료형을 필수로 작성해줘야한다
+
+
+
+mysql> create  database kdb;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> use  kdb;
+Database changed
+mysql>
+mysql> create  table  mt(mount  char(20), alt int);
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> desc  mt;
++-------+----------+------+-----+---------+-------+
+| Field | Type     | Null | Key | Default | Extra |
++-------+----------+------+-----+---------+-------+
+| mount | char(20) | YES  |     | NULL    |       |
+| alt   | int      | YES  |     | NULL    |       |
++-------+----------+------+-----+---------+-------+
+2 rows in set (0.01 sec)
+
+mysql> insert into mt values('설악산', 1708);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into mt values('지리산', 1900);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select * from mt;
++-----------+------+
+| mount     | alt  |
++-----------+------+
+| 설악산    | 1708 |
+| 지리산    | 1900 |
++-----------+------+
+2 rows in set (0.00 sec)
+[출처] AII - 8일차 (양주종의 코딩스쿨 ▶ C언어 ·파이썬 ·리눅스 ·정보처리기사) | 작성자 양주종
